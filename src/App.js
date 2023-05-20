@@ -6,7 +6,9 @@ import {
 function App() {
   return (
     <div className="App">
-      <MenuCardCollection />
+      <div className="ContentArea">
+        <MenuCardCollection />
+      </div>
     </div>
   );
 }
