@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as MenuCardCollection } from "./MenuCardCollection";
+export { default as FuncPanel } from "./FuncPanel";
 export { default as MenuCard } from "./MenuCard";
 export { default as studioTheme } from "./studioTheme";
 export { default as DishCreateForm } from "./DishCreateForm";
