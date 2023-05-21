@@ -17,19 +17,19 @@ function App() {
 
   return (
     <div className="App">
-
-      <div>
-        <button onClick={handleClick}>Click</button>
-
-        {/* 👇️ show component on click */}
-        {isShown && <DishCreateForm />}
-      </div>
       <div className="FuncArea">
-        <FuncPanel />
+        <FuncPanel handleClick={handleClick} />
       </div>
       <div className="ContentArea">
         <MenuCardCollection />
       </div>
+      {isShown &&
+        <div id="overlay">
+          <div id="content">
+            <DishCreateForm handleClick={handleClick} />
+          </div>
+        </div>
+      }
     </div>
   );
 }

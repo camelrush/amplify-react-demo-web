@@ -25,6 +25,7 @@ export default function FuncPanel(props) {
       opacity="0.4000000059604645"
       {...getOverrideProps(overrides, "FuncPanel")}
       {...rest}
+      onClick={()=>props.handleClick()}
     >
       <Flex
         gap="10px"

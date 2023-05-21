@@ -17,6 +17,7 @@ export default function DishCreateForm(props) {
     onSuccess,
     onError,
     onSubmit,
+    onCancel,
     onValidate,
     onChange,
     overrides,
@@ -203,7 +204,7 @@ export default function DishCreateForm(props) {
         {...getOverrideProps(overrides, "CTAFlex")}
       >
         <Button
-          children="Clear"
+          children="クリア"
           type="reset"
           onClick={(event) => {
             event.preventDefault();
@@ -216,7 +217,16 @@ export default function DishCreateForm(props) {
           {...getOverrideProps(overrides, "RightAlignCTASubFlex")}
         >
           <Button
-            children="Submit"
+            children="取 消"
+            type="button"
+            onClick={() => {
+              onCancel && onCancel();
+              props.handleClick();
+            }}
+            {...getOverrideProps(overrides, "CancelButton")}
+          ></Button>
+          <Button
+            children="追 加"
             type="submit"
             variation="primary"
             isDisabled={Object.values(errors).some((e) => e?.hasError)}
