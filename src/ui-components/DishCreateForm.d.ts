@@ -36,6 +36,7 @@ export declare type DishCreateFormProps = React.PropsWithChildren<{
     onSubmit?: (fields: DishCreateFormInputValues) => DishCreateFormInputValues;
     onSuccess?: (fields: DishCreateFormInputValues) => void;
     onError?: (fields: DishCreateFormInputValues, errorMessage: string) => void;
+    onCancel?: () => void;
     onChange?: (fields: DishCreateFormInputValues) => DishCreateFormInputValues;
     onValidate?: DishCreateFormValidationValues;
 } & React.CSSProperties>;
