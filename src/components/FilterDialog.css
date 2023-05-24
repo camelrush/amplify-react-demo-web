@@ -1,0 +1,42 @@
+.add-filter-field {
+    display: flex;
+    font-size: 18px;
+    height:80px;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 10px 0px;
+}
+
+.add-field-label {
+    width: 100px;
+    text-align: left;
+}
+
+.add-field-input {
+    width: 200px;
+    height: 30px;
+}
+
+.filter-cmd-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-cmd-area button {
+    width : 150px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    height: 40px;
+    background-color: #3554C0;
+    opacity: 50%;
+    color: white;
+    border-style: none;
+}
+
+.cmd-filter-cancel {
+    text-align: left;
+}
+.cmd-filter-add {
+    text-align: right;
+}

@@ -1,0 +1,15 @@
+.filter-item {
+    display: flex;
+    background-color:lightblue;
+    font-size: 18px;
+    border-radius: 10px;
+    width: fit-content;
+    height:40px;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 10px 0px;
+}
+
+.filter-value {
+    margin: 0px 10px 0px 10px
+}

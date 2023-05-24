@@ -62,9 +62,15 @@
   
 #content{
   z-index:3;
-  width:50%;
+  width: fit-content;
   padding: 1em;
   border: black;
   border-radius: 10px;;
   background-color:white;
+}
+
+.filter-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
 }
